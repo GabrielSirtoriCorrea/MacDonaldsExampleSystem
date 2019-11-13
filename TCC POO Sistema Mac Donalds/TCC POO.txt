@@ -1,0 +1,73 @@
+//////////////////////////////////////////////////////////////////////////TCC CURSO POO\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+FRONTEND
+
+Maquina do MAC Donalds
+
+Objetivo: Escolher e personalizar lanches pela aplicação em Java
+
+Linhas de produção: 
+	Big Mac		Mac lanche feliz	Quarteirao
+
+	Pão		Pão                              Pão                 
+	Carne		Carne		Carne
+	Alface		Ketchup		Queijo
+	Molho especial	Picles		Ketchup
+	Queijo		Cebola		Picles
+	Picles		Mostarda		Mostarda
+	Cebola				
+
+
+
+Preços individuais:
+
+Big Mac R$ 14
+Mac lanche feliz R$ 12
+Quarteirao R$ 13
+
+Pão R$ 2
+Carne R$ 2
+Ketchup R$ 2
+Molho especial R$2
+Queijo R$2
+Picles R$ 2
+Alface R$ 2
+Cebola R$ 2
+Mostarda R$ 1
+
+Classes:
+
+	Lanche                                    Lanche	
+				|	     	
+	Pedido			|----Pedido
+
+	
+Atributos e metodos:
+	Classe Lanche:
+		String lanche
+		String Pão
+		String Carne
+		Boolean Ketchup
+		Boolean MolhoEspecial
+		String Queijo
+		Boolean Picles
+		Boolean Alface
+		Boolean Cebola
+		Boolean Mostarda
+		
+		Construtor(Todos os atributos)
+		Getters e Setters()
+	
+
+	Classe Pedido
+		Lanche lanche
+		String cliente
+
+		Construtor(Lanche, Cliente)
+		
+		Getters e settes()
+
+		fazerPedido()
+			Enviar para o Backend
+		entregarPedido()
+			Receber do BackEnd
